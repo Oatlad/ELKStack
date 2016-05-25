@@ -16,19 +16,19 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "stash" do |stash|
     stash.vm.box = "ubuntu/trusty64"
-    config.vm.hostname = "stash"
+    stash.vm.hostname = "stash"
   end
+ 
 
   config.vm.define "kib" do |kib|
     kib.vm.box = "ubuntu/trusty64"
-    config.vm.hostname = "kib"
+    kib.vm.hostname = "kib"
   end
-
+    
   config.vm.define "elasti" do |elasti|
     elasti.vm.box = "ubuntu/trusty64"
-    config.vm.hostname = "elasti"
-  end  
-
+    elasti.vm.hostname = "elasti"
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
