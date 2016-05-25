@@ -16,14 +16,17 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "stash" do |stash|
     stash.vm.box = "ubuntu/trusty64"
+    config.vm.hostname = "stash"
   end
 
   config.vm.define "kib" do |kib|
     kib.vm.box = "ubuntu/trusty64"
+    config.vm.hostname = "kib"
   end
 
   config.vm.define "elasti" do |elasti|
     elasti.vm.box = "ubuntu/trusty64"
+    config.vm.hostname = "elasti"
   end  
 
 
